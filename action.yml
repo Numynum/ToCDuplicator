@@ -19,5 +19,5 @@ inputs:
 runs:
     using: composite
     steps:
-        - run: retail=${{ input.retail }} bcc=${{ input.bcc }} classic=${{ input.classic }} $GITHUB_ACTION_PATH/duplicateToc.sh ${{ inputs.files }}
+        - run: retail=${{ inputs.retail }} bcc=${{ inputs.bcc }} classic=${{ inputs.classic }} $GITHUB_ACTION_PATH/duplicateToc.sh ${{ inputs.files }}
           shell: bash

@@ -15,11 +15,6 @@ Example usage:
 
       - name: Create BCC and Classic ToC files
         uses: Numynum/ToCDuplicator@master
-        with:
-            files: path/to/module/*.toc *.toc
-            retail: true
-            bcc: false
-            classic: true
 
       - name: Create Retail Package
         uses: BigWigsMods/packager@master
@@ -40,9 +35,16 @@ After each file is created, the `## Interface-XX` line for that file will be rem
 ## Version arguments
 
 By default, this script will attempt to create a file for each version (retail|bcc|classic).
-This can be explicitly disabled by passing `0` or `false`, as in the example above.
+This can be explicitly disabled by passing `0` or `false`, as in the example below.
 
 Leaving out these arguments is the same as passing `true`.
+
+    - name: Create BCC and Classic ToC files
+      uses: Numynum/ToCDuplicator@master
+      with:
+          retail: true
+          bcc: false
+          classic: true
 
 ## Files argument
 
