@@ -13,7 +13,7 @@ Example usage:
       - name: Replace toc-versions
         uses: Numynum/ToCVersions@master
 
-      - name: Create BCC and Classic ToC files
+      - name: Create Version specific ToC files
         uses: Numynum/ToCDuplicator@master
 
       - name: Create Retail Package
