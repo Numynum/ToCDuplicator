@@ -1,0 +1,23 @@
+name: WoW ToC Duplicator
+description: Duplicates the main toc file, to specified version-specific toc files.
+branding:
+    icon: package
+    color: yellow
+inputs:
+    files:
+        description: 'List of files to duplicate. See https://github.com/Numynum/ToCDuplicator.'
+        required: false
+    retail:
+        description: 'If left out, or true is passed, *originalToC*-Mainline.toc files will be created.'
+        required: false
+    bcc:
+        description: 'If left out, or true is passed, *originalToC*-BCC.toc files will be created.'
+        required: false
+    classic:
+        description: 'If left out, or true is passed, *originalToC*-Classic.toc files will be created.'
+        required: false
+runs:
+    using: composite
+    steps:
+        - run: retail=${{ input.retail }} bcc=${{ input.bcc }} classic=${{ input.classic }} $GITHUB_ACTION_PATH/duplicateToc.sh ${{ inputs.files }}
+          shell: bash
