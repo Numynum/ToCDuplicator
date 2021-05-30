@@ -39,7 +39,7 @@ This can be explicitly disabled by passing `0` or `false`, as in the example bel
 
 Leaving out these arguments is the same as passing `true`.
 
-    - name: Create BCC and Classic ToC files
+    - name: Create Retail and Classic ToC files
       uses: Numynum/ToCDuplicator@master
       with:
           retail: true
