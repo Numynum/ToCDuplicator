@@ -16,8 +16,11 @@ function duplicate() {
 
 		  sed -ri "s/^(## Interface)-Retail(:.*)\$/\1\2/" "$target"
 
-#      sed -ri "/^## Interface-Retail:.*\$/d" "$file"
-# disabled until packagers support version-specific toc files
+      # otherwise it's ignored by the packager
+      git add "$target"
+
+      #sed -ri "/^## Interface-Retail:.*\$/d" "$file"
+      # disabled until packagers support version-specific toc files
     fi
   fi
 
@@ -34,8 +37,11 @@ function duplicate() {
 
 		  sed -ri "s/^(## Interface)-BCC(:.*)\$/\1\2/" "$target"
 
-#      sed -ri "/^## Interface-BCC:.*\$/d" "$file"
-# disabled until packagers support version-specific toc files
+      # otherwise it's ignored by the packager
+      git add "$target"
+
+      #sed -ri "/^## Interface-BCC:.*\$/d" "$file"
+      # disabled until packagers support version-specific toc files
     fi
   fi
 
@@ -52,8 +58,11 @@ function duplicate() {
 
 		  sed -ri "s/^(## Interface)-Classic(:.*)\$/\1\2/" "$target"
 
-#      sed -ri "/^## Interface-Classic:.*\$/d" "$file"
-# disabled until packagers support version-specific toc files
+      # otherwise it's ignored by the packager
+      git add "$target"
+
+      #sed -ri "/^## Interface-Classic:.*\$/d" "$file"
+      # disabled until packagers support version-specific toc files
     fi
   fi
 }
