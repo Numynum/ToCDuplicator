@@ -30,7 +30,7 @@ An example .toc file could be:
     ## Author: EpicAddonWriter2000
     ## Version: @project-version@
 
-After each file is created, the `## Interface-XX` line for that file will be removed from the source .toc file.
+After each file is created, the `## Interface-XX` line for that file will __NOT__ be removed from the source .toc file, until packagers support it properly.
 
 ## Version arguments
 
