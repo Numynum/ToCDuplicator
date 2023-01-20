@@ -1,3 +1,5 @@
+### This github action is now archived, since its functionality has been integrated into the BigWigs packager.
+
 # duplicateToc.sh
 
 __duplicateToc.sh__ will create .toc files specific to each wow version.
